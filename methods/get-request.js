@@ -3,8 +3,6 @@ module.exports = (req,res) =>{
     console.log(baseUrl);
     let id = req.url.split("/");
     console.log(id);
-    
-    
     if(req.url === "/api/movies"){
         res.statusCode = 200;
         res.setHeader("Content-Type", "application/json")
